@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTR Technologies | Conseils TI Québec</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .title-font { font-family: 'Space Grotesk', sans-serif; }
+        .neon-text { text-shadow: 0 0 10px #67e8f9, 0 0 20px #67e8f9, 0 0 40px #22d3ee; }
+        .hero-glow { filter: drop-shadow(0 0 35px rgb(103 232 249)); }
+    </style>
+</head>
+<body class="bg-[#05080f] text-slate-200">
+    <!-- NAVBAR -->
+    <nav class="border-b border-cyan-900 bg-[#05080f]/80 backdrop-blur-md fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="GTR Logo" class="h-9">
+                <div>
+                    <span class="text-2xl font-bold title-font tracking-tighter text-white">GTR</span>
+                    <span class="text-cyan-400 text-sm font-medium tracking-widest">TECHNOLOGIES</span>
+                </div>
+            </div>
+            <a href="#contact" class="text-sm font-medium hover:text-cyan-400 transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="min-h-screen flex items-center justify-center pt-20 bg-gradient-to-b from-[#05080f] to-[#0a1325]">
+        <div class="text-center px-6 max-w-4xl">
+            <img src="assets/logo.png" alt="GTR Technologies" class="mx-auto hero-glow w-[380px] md:w-[520px] mb-8">
+            <h1 class="text-5xl md:text-7xl font-bold title-font tracking-tighter neon-text mb-4">
+                GTR TECHNOLOGIES
+            </h1>
+            <p class="text-xl md:text-2xl text-cyan-300 mb-12">Services-conseils en technologies de l'information<br>Québec depuis 2003</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#services" class="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-10 py-4 rounded-xl transition-all duration-300">Nos Services</a>
+                <a href="#contact" class="border border-cyan-400 hover:bg-cyan-400/10 font-medium px-10 py-4 rounded-xl transition-all">Nous contacter</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ENTREPRISE -->
+    <section class="py-24 bg-[#0a1325]">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold title-font tracking-tight mb-8 text-center">Entreprise</h2>
+            <div class="prose prose-invert max-w-none text-lg leading-relaxed">
+                <p>GTR Technologies est une entreprise de Québec fondée en 2003 œuvrant dans le domaine des services-conseils en technologies de l’information (TI).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="py-24 bg-[#05080f]">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold title-font tracking-tight mb-8 text-center">Clients</h2>
+            <div class="prose prose-invert max-w-none text-lg leading-relaxed">
+                <p>GTR Technologies réalise différents types de mandats, tant pour le compte d'entreprises privées que pour les organismes publics.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-24 bg-[#0a1325]">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-4xl font-bold title-font tracking-tight mb-12 text-center">Services</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-[#111827] border border-cyan-900/50 p-8 rounded-3xl hover:border-cyan-400 transition-all group">
+                    <i class="fa-solid fa-lightbulb text-4xl text-cyan-400 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Conseils et support en gestion</h3>
+                </div>
+                <div class="bg-[#111827] border border-cyan-900/50 p-8 rounded-3xl hover:border-cyan-400 transition-all group">
+                    <i class="fa-solid fa-diagram-project text-4xl text-cyan-400 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Conception de solution TI</h3>
+                </div>
+                <div class="bg-[#111827] border border-cyan-900/50 p-8 rounded-3xl hover:border-cyan-400 transition-all group">
+                    <i class="fa-solid fa-magnifying-glass-chart text-4xl text-cyan-400 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Analyse des besoins et recommandations</h3>
+                </div>
+                <div class="bg-[#111827] border border-cyan-900/50 p-8 rounded-3xl hover:border-cyan-400 transition-all group">
+                    <i class="fa-solid fa-brain text-4xl text-cyan-400 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Conseils en intégration de l’IA dans les opérations</h3>
+                </div>
+            </div>
+            <p class="text-center mt-12 text-cyan-300 text-lg">N'hésitez pas à nous contacter si vous avez besoin de nos précieux conseils.</p>
+        </div>
+    </section>
+
+    <!-- COORDONNÉES -->
+    <section id="contact" class="py-24 bg-[#05080f]">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold title-font tracking-tight mb-10">Coordonnées</h2>
+            <div class="bg-[#0f172a] rounded-3xl p-10 border border-cyan-900">
+                <p class="text-2xl font-semibold mb-2">Guy Tremblay</p>
+                <p class="text-cyan-400 mb-8">Président</p>
+                <div class="space-y-4 text-left max-w-md mx-auto">
+                    <p><i class="fa-solid fa-location-dot w-5 text-cyan-400"></i> 6420 du Promontoire<br>Québec, Québec<br>Canada G2K 2G8</p>
+                    <p><i class="fa-solid fa-phone w-5 text-cyan-400"></i> <a href="tel:4182619186" class="hover:text-cyan-400">418 261-9186</a></p>
+                    <p><i class="fa-solid fa-envelope w-5 text-cyan-400"></i> <a href="mailto:guy.tremblay@gtrtechnologies.com" class="hover:text-cyan-400">guy.tremblay@gtrtechnologies.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 text-center text-slate-500 text-sm">
+        © 2003 — 2026 GTR Technologies Inc. Tous droits réservés.
+    </footer>
+
+    <script>
+        tailwind.config = { content: [] };
+    </script>
+</body>
+</html>
